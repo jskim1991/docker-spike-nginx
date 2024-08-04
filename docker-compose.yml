@@ -1,0 +1,6 @@
+services:
+  books:
+    container_name: books
+    build: ./books
+    ports:
+      - "3000:80"
