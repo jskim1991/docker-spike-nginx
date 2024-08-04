@@ -50,3 +50,20 @@ List Docker containers
 ```shell
 docker compose ps
 ```
+
+## Push to Dockerhub
+
+Login to Dockerhub:
+```shell
+docker login --username <username>
+```
+
+Tag image:
+```shell
+docker tag books-frontend <username>/books-frontend
+```
+
+Push image:
+```shell
+docker push <username>/books-frontend
+```
